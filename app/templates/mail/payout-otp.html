@@ -1,0 +1,20 @@
+{% extends 'mail/base/base.html' %}
+{% block title %} OTP {% endblock %}
+
+
+{% block content %}
+        <p style="font-weight: bold; font-family: 'Inter', 'sans-serif'; font-size: 20px; font-weight: 600; color: #B1B1B1;">
+            Hello {{ name }}, a payout was just attempted. Use the OTP to continue.
+        </p>
+
+        
+        <div style="width: 95%; font-family: 'Inter', 'sans-serif'; margin-bottom: 20px; font-size: 32px; font-weight: 400; color: #FFFFFF;">
+            <p>
+                {{ otp_code }}
+            </p>
+        </div>
+
+        <p style="font-weight: bold; font-family: 'Inter', 'sans-serif'; font-size: 20px; font-weight: 600; color: #B1B1B1;">
+            If this wasn't you, you can just ignore it.
+        </p>
+{% endblock %}

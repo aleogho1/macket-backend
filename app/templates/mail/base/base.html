@@ -1,0 +1,114 @@
+<!-- Emails use the XHTML Strict doctype -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <!--[if !mso]><!-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--<![endif]-->
+        <!-- The character set should be utf-8 -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+        <meta charset="utf-8">
+        <meta name="x-apple-disable-message-reformatting">
+        
+        <title>{% block title %}{% endblock %}</title>
+
+        <style>
+            @font-face {
+                font-family: 'aquawax';
+                src: url(./aquawax/Aquawax\ Light\ Trial.ttf),
+                    url(./aquawax/Aquawax\ Medium\ Trial.ttf)
+            }
+        </style>
+
+    </head>
+
+    <body style="color: #fff;">
+        <div style="max-width: 600px; padding-left: 25px; border: 1px solid black; margin: auto; border-radius: 20px; padding-bottom: 3px; background-color: #020102;">
+            <table role="presentation" style="width:100%;border:0;border-spacing:0; padding-top: 40px; padding-bottom: 60px;">
+                <tr>
+                    <td align="center">
+                        <div style="width: 90px;height: 90px;border-radius: 50%;margin: 0 auto;background: #020102;position: relative;">
+                            <img src="https://res.cloudinary.com/dvgthwhdn/image/upload/v1721120256/mail/t-logo.png" style="width: 100%;position: absolute;top: 25%;left: -1px;transform: scale(0.8);" alt="logo" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            {% block content %}{% endblock %}
+
+            <div class="spacer" style="line-height:30px;height:30px;mso-line-height-rule:exactly;">&nbsp;</div>
+
+            <footer style="width: 95%; font-size: 9px; font-weight: 400; margin-top: 20px; color: #B1B1B1; font-family: 'Inter', 'sans-serif';">
+                <table role="presentation" style="width:50%; margin: auto; border:0;border-spacing:0; padding-top: 40px; padding-bottom: 60px; border-collapse: collapse;">
+                        <tr>
+                            <td align="center">
+                                <a href="" style="color: white; text-decoration: none;">
+                                    <li>Privacy Policy</li>
+                                </a>
+                            </td>
+                            <td align="center"style="">
+                                <a href="emailto:support@trendit3.com" style="color: white; text-decoration: none;">
+                                    <li>Contact us</li>
+                                </a>
+                            </td>                  
+                        </tr>
+                </table> 
+                <div>
+                    <p style="text-align: center; margin-bottom: 15px;">
+                        Copyright 2024 Trendit3 Technology. All rights reserved. 
+                    </p>
+
+                    <table role="presentation" style="width:40%; margin: auto; border:0;border-spacing:0; padding-top: 40px; padding-bottom: 60px; border-collapse: collapse;">
+                        <tr>
+                            <td align="center">
+                                <a href="https://www.facebook.com/TrenditHQ/" style="margin-right: 10px;">
+                                    <img src="https://res.cloudinary.com/dvgthwhdn/image/upload/v1722529681/mail/facebook.png" width="24px" height="24px"/>
+                                </a>
+                            </td>
+                            <td align="center"style="">
+                                <a href="https://instagram.com/trendithq" style="margin-right: 10px;">
+                                    <img src="https://res.cloudinary.com/dvgthwhdn/image/upload/v1722529681/mail/instagram.png" width="24px" height="24px"/>                           
+                                </a>
+                            </td> 
+                            <td align="center"style="">
+                                <a href="https://www.youtube.com/@Trendithq?sub_confirmation=1" style="margin-right: 10px;">
+                                    <img src="https://res.cloudinary.com/dvgthwhdn/image/upload/v1722529681/mail/youtube.png" width="24px" height="24px"/>                         
+                                </a>
+                            </td> 
+                            <td align="center" style="padding-top: 7px;">
+                                <a href="https://x.com/trenditHQ" style="margin-right: 10px;">
+                                    <img src="https://res.cloudinary.com/dvgthwhdn/image/upload/v1722529681/mail/x.png" width="24px" height="24px"/>
+                                </a> 
+                            </td> 
+                            <td align="center" style="padding-top: 7px;">
+                                <a href="https://www.linkedin.com/company/trendithq/" style="margin-right: 10px; margin-top: 5px;">
+                                    <img src="https://res.cloudinary.com/dvgthwhdn/image/upload/v1722529681/mail/linkedin-icon.png" width="24px" height="24px"/>    
+                                </a>  
+                            </td> 
+                            <td align="center" style="padding-top: 7px;">
+                                <a href="https://www.tiktok.com/@trendithq" style="margin-right: 10px;">
+                                    <img src="https://res.cloudinary.com/dvgthwhdn/image/upload/v1722529681/mail/tiktok.png" width="24px" height="24px"/>                           
+                                </a>
+                            </td>    
+                            <td align="center" style="padding-top: 7px;">
+                                <a href="https://t.me/trendithq" style="margin-right: 10px; margin-top: 5px;">
+                                    <img src="https://res.cloudinary.com/dvgthwhdn/image/upload/v1722529681/mail/Telegram.png" width="24px" height="24px"/>
+                                </a>
+                            </td>               
+                        </tr>
+                    </table>
+                </div>
+            </footer>
+        
+            <div class="spacer" style="line-height:50px;height:50px;mso-line-height-rule:exactly;">&nbsp;</div>
+
+        </div>
+    </body>
+</html>
